@@ -1,0 +1,118 @@
+
+body.modal-opened{
+    overflow: hidden;
+}
+.modal-mask {
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.modal-mask.fixed-center{
+      position: fixed;
+}
+  
+.modal-mask.custom-sticky-top {
+    position: absolute;
+    display: block;
+}
+
+
+.modal-mask.fixed{
+    display: block;
+    position: fixed;
+}
+
+.modal-wrapper{
+  width: 100% !important;
+  padding: 0 !important;
+}
+  
+.modal-body {
+    margin: 5px 0;
+    padding: 0 !important;
+}
+
+  
+.modal-default-button {
+    float: right;
+}
+
+  
+.modal-enter {
+    opacity: 0;
+}
+  
+.modal-leave-active {
+    opacity: 0;
+}
+  
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.modal-header{
+    border-bottom : unset !important;
+    padding: 1rem 0rem !important;
+}
+.modal-footer {
+    border-top: unset !important;
+    padding: unset !important;
+}
+
+.modal-container {
+    max-width: 57rem;
+    transition: all 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 25px;
+    padding: 5px 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    background: #FFFFFF;
+    margin: 0px auto;
+}
+.modal-mask.lg .modal-container{
+    max-width: 70%;
+    border-radius: 0px;
+    margin-top: 0px;
+    min-height: 100vh;
+}
+  .modal-mask#login  .modal-container{
+    max-width: 45rem;
+    font-family: 'NunitoSans-SemiBold' !important;
+} 
+  
+
+.modal-mask h3.title{
+    font-family: 'NunitoSans-SemiBold' !important;
+    color: #616060;
+    margin-top: 3vh;
+}
+
+.modal-mask a.close {
+    color: #D3D3D3 !important;
+    font-family: 'NunitoSans-SemiBold';
+    font-size: 1.5rem;
+    opacity: .8;
+}
+.modal-mask .modal-body a{
+    color: #ff7667 !important;
+    font-family: 'NunitoSans-SemiBold' !important;
+}
+
+.custom-modal-footer.footer-form-legende {
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    font-size: 12px;
+    font-family: 'NunitoSans-Regular' !important;
+}
